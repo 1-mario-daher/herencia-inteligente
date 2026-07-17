@@ -1,0 +1,9 @@
+# Nunca subir secretos ni basura
+.secret.json
+*.token
+_pega_token_aqui.txt
+node_modules/
+.claude/
+*.log
+.DS_Store
+tasks/

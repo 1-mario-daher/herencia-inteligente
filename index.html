@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Herencia · Mario Daher</title>
+<meta name="description" content="Cómo el patrimonio cruza a la siguiente generación: ordenado, líquido y sin pleitos. Para quien sí lee." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --navy:#0a1726;
+    --navy-2:#0e2336;
+    --navy-3:#10283e;
+    --line:rgba(120,180,210,.16);
+    --cream:#f2ece1;
+    --muted:#9fb3c4;
+    --cyan:#3fc8e6;
+    --cyan-soft:rgba(63,200,230,.12);
+    --serif:'Fraunces','Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    --sans:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    background:var(--navy);
+    color:var(--cream);
+    font-family:var(--sans);
+    -webkit-font-smoothing:antialiased;
+    line-height:1.5;
+    overflow-x:hidden;
+  }
+
+  /* ---------- shell ---------- */
+  .wrap{max-width:680px;margin:0 auto;padding:0 18px}
+
+  header.intro{
+    text-align:center;
+    padding:84px 18px 40px;
+    max-width:680px;margin:0 auto;
+  }
+  header.intro .mark{
+    font-family:var(--sans);
+    font-size:12px;letter-spacing:.32em;text-transform:uppercase;
+    color:var(--cyan);font-weight:600;margin-bottom:26px;
+  }
+  header.intro h1{
+    font-family:var(--serif);
+    font-weight:500;
+    font-size:clamp(34px,7vw,52px);
+    line-height:1.08;
+    letter-spacing:-.01em;
+  }
+  header.intro p{
+    color:var(--muted);
+    font-size:16px;
+    margin-top:22px;
+    max-width:460px;
+    margin-left:auto;margin-right:auto;
+  }
+  .scroll-hint{
+    margin-top:48px;color:var(--muted);font-size:12px;
+    letter-spacing:.18em;text-transform:uppercase;
+    display:inline-flex;align-items:center;gap:10px;
+  }
+  .scroll-hint::after{content:"";width:1px;height:34px;background:linear-gradient(var(--cyan),transparent);display:block;animation:pulse 2.4s ease-in-out infinite}
+  @keyframes pulse{0%,100%{opacity:.3}50%{opacity:1}}
+
+  /* ---------- carousel block ---------- */
+  section.deck{padding:42px 0}
+  .deck-kicker{
+    max-width:680px;margin:0 auto 16px;padding:0 22px;
+    font-size:12px;letter-spacing:.28em;text-transform:uppercase;
+    color:var(--cyan);font-weight:600;
+    display:flex;align-items:center;gap:12px;
+  }
+  .deck-kicker .num{color:var(--muted);font-variant-numeric:tabular-nums}
+  .deck-kicker .rule{flex:1;height:1px;background:var(--line)}
+
+  .carousel-frame{position:relative;max-width:680px;margin:0 auto}
+
+  .carousel{
+    display:flex;
+    gap:16px;
+    overflow-x:auto;
+    scroll-snap-type:x mandatory;
+    scroll-padding:0 22px;
+    padding:6px 22px 6px;
+    scrollbar-width:none;
+  }
+  .carousel::-webkit-scrollbar{display:none}
+
+  .slide{
+    scroll-snap-align:center;
+    flex:0 0 100%;
+    min-height:460px;
+    background:linear-gradient(160deg,var(--navy-2),var(--navy-3));
+    border:1px solid var(--line);
+    border-radius:22px;
+    padding:46px 38px;
+    display:flex;flex-direction:column;justify-content:center;
+    position:relative;
+  }
+  .slide .idx{
+    position:absolute;top:26px;left:38px;
+    font-family:var(--sans);font-size:12px;font-weight:600;
+    color:var(--muted);letter-spacing:.1em;
+  }
+  .slide .sig{
+    position:absolute;bottom:24px;left:38px;right:38px;
+    font-size:11px;letter-spacing:.18em;text-transform:uppercase;
+    color:rgba(159,179,196,.55);
+    display:flex;justify-content:space-between;
+  }
+  .slide p.big{
+    font-family:var(--serif);
+    font-weight:400;
+    font-size:clamp(24px,4.6vw,33px);
+    line-height:1.22;
+    letter-spacing:-.005em;
+  }
+  .slide p.big strong{color:var(--cyan);font-weight:500}
+  .slide p.sub{
+    color:var(--muted);font-size:16px;margin-top:20px;line-height:1.55;
+  }
+  .slide.lead p.big{font-size:clamp(27px,5.4vw,38px)}
+
+  /* dots + arrows */
+  .controls{
+    max-width:680px;margin:18px auto 0;padding:0 22px;
+    display:flex;align-items:center;justify-content:center;gap:8px;
+  }
+  .dots{display:flex;gap:7px}
+  .dot{width:7px;height:7px;border-radius:50%;background:rgba(159,179,196,.3);transition:.3s;cursor:pointer}
+  .dot.on{background:var(--cyan);width:22px;border-radius:4px}
+
+  .arrow{
+    width:38px;height:38px;border-radius:50%;
+    border:1px solid var(--line);background:transparent;color:var(--cream);
+    font-size:16px;cursor:pointer;display:none;align-items:center;justify-content:center;
+    transition:.2s;
+  }
+  .arrow:hover{background:var(--cyan-soft);border-color:var(--cyan);color:var(--cyan)}
+  @media(hover:hover) and (min-width:760px){.arrow{display:flex}}
+
+  /* ---------- closing CTA ---------- */
+  section.close{
+    text-align:center;padding:80px 22px 110px;max-width:620px;margin:0 auto;
+  }
+  section.close .tag{
+    font-family:var(--serif);font-style:italic;
+    font-size:clamp(26px,5.5vw,40px);line-height:1.25;font-weight:400;
+  }
+  section.close .tag b{color:var(--cyan);font-style:normal;font-weight:500}
+  section.close .who{color:var(--muted);font-size:16px;margin-top:26px;line-height:1.6}
+  .cta-row{margin-top:40px;display:flex;flex-direction:column;align-items:center;gap:14px}
+  a.cta{
+    display:inline-flex;align-items:center;gap:10px;
+    background:var(--cyan);color:#04222b;font-weight:600;
+    font-size:16px;text-decoration:none;
+    padding:16px 34px;border-radius:999px;
+    transition:.2s;
+  }
+  a.cta:hover{transform:translateY(-2px);box-shadow:0 14px 40px rgba(63,200,230,.28)}
+  a.cta-ghost{color:var(--muted);font-size:14px;text-decoration:none;letter-spacing:.04em}
+  a.cta-ghost:hover{color:var(--cyan)}
+  footer{text-align:center;padding:0 22px 60px;color:rgba(159,179,196,.4);font-size:12px;letter-spacing:.16em;text-transform:uppercase}
+</style>
+</head>
+<body>
+
+  <header class="intro">
+    <div class="mark">Mario Daher · Patrimonio &amp; Sucesión</div>
+    <h1>La herencia no se hereda.<br>Se diseña.</h1>
+    <p>Una construcción de 30 años puede deshacerse en 18 meses si nadie pensó en cómo cruza a la siguiente generación. Esto es para quien sí piensa en eso.</p>
+    <div class="scroll-hint">Desliza cada idea</div>
+  </header>
+
+  <!-- ============ DECKS ============ -->
+  <div id="decks"></div>
+
+  <section class="close">
+    <p class="tag">No te quiero vender nada.<br>Pero si algo de esto te movió,<br><b>ya sabes a qué me dedico.</b></p>
+    <p class="who">Diseño cómo el patrimonio de las familias mexicanas cruza a la siguiente generación: ordenado, líquido y sin pleitos. Cuando quieras ver cómo se vería en tu caso, me escribes.</p>
+    <div class="cta-row">
+      <a class="cta" href="https://wa.me/525518385677?text=Mario,%20le%C3%AD%20tu%20p%C3%A1gina%20de%20herencia%20y%20quiero%20ver%20c%C3%B3mo%20se%20ver%C3%ADa%20en%20mi%20caso." target="_blank" rel="noopener">Pídeme el análisis →</a>
+      <a class="cta-ghost" href="mailto:daher@life-experts.consulting">o escríbeme a daher@life-experts.consulting</a>
+    </div>
+  </section>
+
+  <footer>Yo no vendo. A mí me compran.</footer>
+
+<script>
+/* ---------- render: alimentado desde posts.json (feed diario) ---------- */
+const MESES = ["ENE","FEB","MAR","ABR","MAY","JUN","JUL","AGO","SEP","OCT","NOV","DIC"];
+function fechaCorta(iso){
+  if(!iso) return "";
+  const [y,m,d] = iso.split("-").map(Number);
+  return `${String(d).padStart(2,'0')} ${MESES[m-1]}`;
+}
+
+const root = document.getElementById('decks');
+
+function renderDeck(deck, di){
+  const sec = document.createElement('section');
+  sec.className = 'deck';
+  const num = fechaCorta(deck.date) || String(di+1).padStart(2,'0');
+
+  const slidesHTML = deck.slides.map((s,si)=>`
+    <article class="slide${si===0?' lead':''}">
+      <span class="idx">${si+1} / ${deck.slides.length}</span>
+      <p class="big">${s.big}</p>
+      ${s.sub?`<p class="sub">${s.sub}</p>`:''}
+      <span class="sig"><span>${deck.kicker}</span><span>Mario Daher</span></span>
+    </article>`).join('');
+
+  const dotsHTML = deck.slides.map((_,si)=>`<span class="dot${si===0?' on':''}" data-i="${si}"></span>`).join('');
+
+  sec.innerHTML = `
+    <div class="deck-kicker"><span class="num">${num}</span><span>${deck.kicker}</span><span class="rule"></span></div>
+    <div class="carousel-frame">
+      <div class="carousel">${slidesHTML}</div>
+    </div>
+    <div class="controls">
+      <button class="arrow prev" aria-label="Anterior">‹</button>
+      <div class="dots">${dotsHTML}</div>
+      <button class="arrow next" aria-label="Siguiente">›</button>
+    </div>`;
+  root.appendChild(sec);
+
+  const car = sec.querySelector('.carousel');
+  const dots = [...sec.querySelectorAll('.dot')];
+  const slideEls = [...sec.querySelectorAll('.slide')];
+
+  function active(){
+    let best=0,bd=1e9;
+    slideEls.forEach((el,i)=>{
+      const d=Math.abs(el.getBoundingClientRect().left - car.getBoundingClientRect().left - 22);
+      if(d<bd){bd=d;best=i;}
+    });
+    dots.forEach((d,i)=>d.classList.toggle('on',i===best));
+    return best;
+  }
+  let t; car.addEventListener('scroll',()=>{clearTimeout(t);t=setTimeout(active,60)});
+  dots.forEach(d=>d.addEventListener('click',()=>slideEls[+d.dataset.i].scrollIntoView({behavior:'smooth',inline:'center',block:'nearest'})));
+  sec.querySelector('.next').addEventListener('click',()=>{const i=Math.min(active()+1,slideEls.length-1);slideEls[i].scrollIntoView({behavior:'smooth',inline:'center',block:'nearest'})});
+  sec.querySelector('.prev').addEventListener('click',()=>{const i=Math.max(active()-1,0);slideEls[i].scrollIntoView({behavior:'smooth',inline:'center',block:'nearest'})});
+}
+
+/* ---------- carga del feed ---------- */
+fetch('posts.json?v=' + Date.now())
+  .then(r => r.json())
+  .then(data => {
+    const posts = (data.posts || [])
+      .slice()
+      .sort((a,b) => (b.date||'').localeCompare(a.date||'')); // mas reciente primero
+    posts.forEach(renderDeck);
+  })
+  .catch(err => {
+    root.innerHTML = '<p style="text-align:center;color:var(--muted);padding:40px">No se pudo cargar el contenido (' + err + ').<br>Abre la página desde el servidor, no con doble clic al archivo.</p>';
+  });
+</script>
+</body>
+</html>

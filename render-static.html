@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="UTF-8" />
+<style>
+  :root{--navy:#0a1726;--navy-2:#0e2336;--navy-3:#10283e;--line:rgba(120,180,210,.18);
+    --cream:#f2ece1;--muted:#9fb3c4;--cyan:#3fc8e6;
+    --serif:'Iowan Old Style','Palatino Linotype',Palatino,Georgia,'Times New Roman',serif;
+    --sans:-apple-system,'Segoe UI',Roboto,sans-serif;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:#06101b;font-family:var(--sans);padding:24px;color:var(--cream)}
+  .head{max-width:1180px;margin:0 auto 20px;display:flex;align-items:baseline;gap:14px}
+  .head h1{font-family:var(--serif);font-weight:500;font-size:22px}
+  .head .meta{color:var(--muted);font-size:13px}
+  .grid{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+  .ig{position:relative;width:100%;aspect-ratio:4/5;
+    background:linear-gradient(158deg,var(--navy-2),var(--navy-3) 55%,var(--navy));
+    border:1px solid var(--line);border-radius:16px;overflow:hidden;
+    display:flex;flex-direction:column;justify-content:center;padding:30px 26px}
+  .ig::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;
+    background:linear-gradient(90deg,transparent,var(--cyan),transparent);opacity:.55}
+  .top{position:absolute;top:24px;left:26px;right:26px;display:flex;justify-content:space-between;align-items:center}
+  .kick{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--cyan);font-weight:700}
+  .pg{font-size:11px;color:var(--muted);letter-spacing:.08em}
+  .big{font-family:var(--serif);font-weight:400;line-height:1.2;letter-spacing:-.01em;font-size:21px}
+  .big strong{color:var(--cyan);font-weight:600}
+  .sub{color:var(--muted);font-size:14px;margin-top:13px;line-height:1.5}
+  .lead .big{font-size:23px}
+  .foot{position:absolute;bottom:24px;left:26px;right:26px;display:flex;justify-content:space-between;
+    font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:rgba(159,179,196,.6)}
+  .foot .name{color:var(--cream);opacity:.78}
+  .ig.cta{background:linear-gradient(158deg,#0f2b40,#0a1726)}
+  .pill{display:inline-block;margin-top:16px;background:var(--cyan);color:#04222b;font-family:var(--sans);
+    font-weight:700;font-size:12px;padding:8px 16px;border-radius:999px;width:max-content}
+</style></head><body>
+<div class="head"><h1>El encuadre</h1><span class="meta">28 JUN · 5 slides · formato 1080×1350 (4:5 Instagram)</span></div>
+<div class="grid">
+  <div class="ig lead"><div class="top"><span class="kick">El encuadre</span><span class="pg">1/5</span></div>
+    <div class="big">En México, la mayoría de las fortunas no se pierden <strong>construyéndose</strong>. Se pierden <strong>heredándose</strong>.</div>
+    <div class="foot"><span>@herencia.inteligente</span><span class="name">Mario Daher</span></div></div>
+  <div class="ig"><div class="top"><span class="kick">El encuadre</span><span class="pg">2/5</span></div>
+    <div class="big">Construir un patrimonio toma 30 años. Heredarlo mal lo deshace en 18 meses.</div>
+    <div class="foot"><span>@herencia.inteligente</span><span class="name">Mario Daher</span></div></div>
+  <div class="ig"><div class="top"><span class="kick">El encuadre</span><span class="pg">3/5</span></div>
+    <div class="big">Heredar no es firmar un testamento. Es decidir cómo el dinero cruza a tus hijos sin romperse en el camino.</div>
+    <div class="foot"><span>@herencia.inteligente</span><span class="name">Mario Daher</span></div></div>
+  <div class="ig"><div class="top"><span class="kick">El encuadre</span><span class="pg">4/5</span></div>
+    <div class="big">Quien tiene mucho no improvisa su sucesión. La arquitecta.</div>
+    <div class="sub">De eso se trata todo lo que sigue.</div>
+    <div class="foot"><span>@herencia.inteligente</span><span class="name">Mario Daher</span></div></div>
+  <div class="ig cta"><div class="top"><span class="kick">Cierre</span><span class="pg">5/5</span></div>
+    <div class="big">No te quiero vender nada. Pero si algo de esto te movió, <strong>ya sabes a qué me dedico.</strong>
+      <span class="pill">Escríbeme →</span></div>
+    <div class="foot"><span>@herencia.inteligente</span><span class="name">Yo no vendo. A mí me compran.</span></div></div>
+</div>
+</body></html>

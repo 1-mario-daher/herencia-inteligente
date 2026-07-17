@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Render IG · Herencia</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" media="print" onload="this.media='all'" />
+<style>
+  :root{
+    --navy:#0a1726; --navy-2:#0e2336; --navy-3:#10283e;
+    --line:rgba(120,180,210,.18);
+    --cream:#f2ece1; --muted:#9fb3c4; --cyan:#3fc8e6;
+    --serif:'Fraunces','Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+    --sans:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:#06101b;font-family:var(--sans);padding:26px;color:var(--cream)}
+  .head{max-width:1200px;margin:0 auto 22px;display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
+  .head h1{font-family:var(--serif);font-weight:500;font-size:22px}
+  .head .meta{color:var(--muted);font-size:13px;letter-spacing:.04em}
+  .grid{
+    max-width:1200px;margin:0 auto;
+    display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));
+    gap:18px;
+  }
+
+  /* ----- tarjeta 4:5 (1080x1350) ----- */
+  .ig{
+    position:relative;width:100%;aspect-ratio:4/5;
+    background:linear-gradient(158deg,var(--navy-2),var(--navy-3) 55%,var(--navy));
+    border:1px solid var(--line);border-radius:18px;overflow:hidden;
+    display:flex;flex-direction:column;justify-content:center;
+    padding:9% 9%;
+  }
+  .ig::before{ /* hairline superior cyan */
+    content:"";position:absolute;top:0;left:0;right:0;height:3px;
+    background:linear-gradient(90deg,transparent,var(--cyan),transparent);opacity:.55;
+  }
+  .ig .top{position:absolute;top:7.5%;left:9%;right:9%;display:flex;justify-content:space-between;align-items:center}
+  .ig .kick{font-size:clamp(9px,1.6vw,12px);letter-spacing:.24em;text-transform:uppercase;color:var(--cyan);font-weight:600}
+  .ig .pg{font-size:clamp(9px,1.6vw,12px);color:var(--muted);font-variant-numeric:tabular-nums;letter-spacing:.08em}
+  .ig .big{font-family:var(--serif);font-weight:400;line-height:1.18;letter-spacing:-.01em;font-size:clamp(20px,3.4vw,30px)}
+  .ig .big strong{color:var(--cyan);font-weight:500}
+  .ig .sub{color:var(--muted);font-size:clamp(12px,1.9vw,15px);margin-top:14px;line-height:1.5}
+  .ig.lead .big{font-size:clamp(23px,3.9vw,34px)}
+  .ig .foot{position:absolute;bottom:7.5%;left:9%;right:9%;display:flex;justify-content:space-between;align-items:center;
+    font-size:clamp(8px,1.5vw,11px);letter-spacing:.18em;text-transform:uppercase;color:rgba(159,179,196,.6)}
+  .ig .foot .name{color:var(--cream);opacity:.75}
+
+  /* portada (slide 0) y cierre llevan acento extra */
+  .ig.cover{background:linear-gradient(158deg,#0e2336,#0a1726)}
+  .ig.cta{background:linear-gradient(158deg,#0f2b40,#0a1726)}
+  .ig.cta .big{font-style:normal}
+  .ig.cta .pill{display:inline-block;margin-top:18px;background:var(--cyan);color:#04222b;font-family:var(--sans);
+    font-weight:600;font-size:clamp(11px,1.8vw,14px);padding:9px 18px;border-radius:999px;width:max-content}
+</style>
+</head>
+<body>
+  <div class="head">
+    <h1 id="t">Carrusel del día</h1>
+    <span class="meta" id="m">cargando…</span>
+  </div>
+  <div class="grid" id="grid"></div>
+
+<script>
+const params = new URLSearchParams(location.search);
+const wantDate = params.get('date');
+
+fetch('posts.json?v=' + Date.now()).then(r=>r.json()).then(data=>{
+  const posts = (data.posts||[]).slice().sort((a,b)=>(b.date||'').localeCompare(a.date||''));
+  const post = wantDate ? posts.find(p=>p.date===wantDate) : posts[0];
+  if(!post){document.getElementById('m').textContent='sin post';return;}
+
+  document.getElementById('t').textContent = post.kicker;
+  document.getElementById('m').textContent = post.date + '  ·  ' + (post.slides.length+1) + ' slides (con cierre)  ·  formato 1080×1350';
+
+  const grid = document.getElementById('grid');
+  const n = post.slides.length;
+
+  post.slides.forEach((s,i)=>{
+    const d=document.createElement('div');
+    d.className='ig'+(i===0?' lead cover':'');
+    d.innerHTML=`
+      <div class="top"><span class="kick">${post.kicker}</span><span class="pg">${i+1}/${n+1}</span></div>
+      <div class="big">${s.big}</div>
+      ${s.sub?`<div class="sub">${s.sub}</div>`:''}
+      <div class="foot"><span>@herencia.inteligente</span><span class="name">Mario Daher</span></div>`;
+    grid.appendChild(d);
+  });
+
+  // slide de cierre (siempre el mismo CTA suave)
+  const c=document.createElement('div');
+  c.className='ig cta';
+  c.innerHTML=`
+    <div class="top"><span class="kick">Cierre</span><span class="pg">${n+1}/${n+1}</span></div>
+    <div class="big">No te quiero vender nada. Pero si algo de esto te movió, <strong>ya sabes a qué me dedico.</strong>
+      <span class="pill">Escríbeme &nbsp;→</span></div>
+    <div class="foot"><span>@herencia.inteligente</span><span class="name">Yo no vendo. A mí me compran.</span></div>`;
+  grid.appendChild(c);
+});
+</script>
+</body>
+</html>

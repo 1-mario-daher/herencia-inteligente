@@ -1,0 +1,144 @@
+{
+  "_comment": "Banco de posts publicados. El robot diario AGREGA un objeto nuevo al inicio del arreglo 'posts'. La pagina muestra del mas reciente al mas viejo. Cada slide: { big: HTML con <strong> para resaltar en cyan, sub: opcional }.",
+  "posts": [
+    {
+      "date": "2026-06-29",
+      "kicker": "El encuadre",
+      "slides": [
+        {
+          "big": "En México, la mayoría de las fortunas no se pierden <strong>construyéndose</strong>. Se pierden <strong>heredándose</strong>."
+        },
+        {
+          "big": "Construir un patrimonio toma 30 años. Heredarlo mal lo deshace en 18 meses."
+        },
+        {
+          "big": "Heredar no es firmar un testamento. Es decidir cómo el dinero cruza a tus hijos sin romperse en el camino."
+        },
+        {
+          "big": "Quien tiene mucho no improvisa su sucesión. La arquitecta.",
+          "sub": "De eso se trata todo lo que sigue."
+        }
+      ]
+    },
+    {
+      "date": "2026-06-30",
+      "kicker": "El costo de no planear",
+      "slides": [
+        {
+          "big": "Cuando alguien con patrimonio muere sin estructura en México, lo primero que hereda su familia no es el dinero. Es un <strong>juicio</strong>."
+        },
+        {
+          "big": "Un juicio sucesorio aquí promedia entre 1 y 3 años. En ese tiempo, las cuentas se congelan."
+        },
+        {
+          "big": "Tu familia hereda tus bienes… y la imposibilidad de tocarlos justo cuando más los necesita."
+        },
+        {
+          "big": "Notario, albacea, peritos, honorarios. Una sucesión mal armada se come entre el <strong>5% y el 15%</strong> del patrimonio."
+        },
+        {
+          "big": "Todo eso es evitable. Con una decisión tomada hoy, en vida."
+        }
+      ]
+    },
+    {
+      "date": "2026-07-01",
+      "kicker": "Liquidez",
+      "slides": [
+        {
+          "big": "Tus herederos no necesitan más bienes. Necesitan <strong>efectivo</strong> el día que tú faltes."
+        },
+        {
+          "big": "Un patrimonio puede valer 50 millones de pesos y no tener 500 mil líquidos el día exacto en que hacen falta."
+        },
+        {
+          "big": "Sin liquidez, la familia vende. Y lo que se vende con prisa, se vende barato."
+        },
+        {
+          "big": "Un seguro de vida entrega esa liquidez en días, libre de ISR, directo a quien tú decidas."
+        },
+        {
+          "big": "No para hacerlos ricos. Para que no tengan que desarmar lo que construiste para pagar lo que cuesta morir."
+        }
+      ]
+    },
+    {
+      "date": "2026-07-02",
+      "kicker": "Lo que el SAT no te dijo",
+      "slides": [
+        {
+          "big": "En México, heredar en línea directa no paga ISR. Qué bueno. Pero esa no es toda la historia."
+        },
+        {
+          "big": "El bien que heredas conserva su costo fiscal original. El día que tus hijos lo vendan, el impuesto <strong>despierta</strong>."
+        },
+        {
+          "big": "Un inmueble heredado puede cargar una ganancia fiscal de décadas. La factura llega cuando menos conviene."
+        },
+        {
+          "big": "El dinero de un seguro de vida llega libre de ISR y fuera de la masa hereditaria. Limpio. Inmediato. De nadie más."
+        },
+        {
+          "big": "Planear no es evadir. Es ordenar para que el SAT cobre lo justo y tu familia conserve lo demás."
+        }
+      ]
+    },
+    {
+      "date": "2026-07-03",
+      "kicker": "El error de los iguales",
+      "slides": [
+        {
+          "big": "El error más caro de las familias con patrimonio: creer que una herencia se reparte en partes iguales."
+        },
+        {
+          "big": "Un negocio no se parte en tres. Una casa no se vive entre cuatro. Los bienes no se cortan; las familias sí."
+        },
+        {
+          "big": "Al hijo que sigue el negocio, déjale el negocio. A los demás, déjales su parte <strong>en efectivo</strong>."
+        },
+        {
+          "big": "Ese efectivo no sale de tu bolsa hoy. Sale de un seguro el día que haga falta."
+        },
+        {
+          "big": "Así heredas armonía, no un pleito con apellido."
+        }
+      ]
+    },
+    {
+      "date": "2026-07-04",
+      "kicker": "Privacidad y certeza",
+      "slides": [
+        {
+          "big": "Un testamento se abre, se lee, se impugna y se vuelve público. Un seguro, no."
+        },
+        {
+          "big": "El seguro nombra beneficiarios directos. No entra al juicio. No se discute. No espera turno."
+        },
+        {
+          "big": "Tú decides quién, cuánto y cuándo. Con nombre y apellido. Sin que nadie más opine."
+        },
+        {
+          "big": "Llega en semanas, no en años. Privado, exacto y a prueba de conflictos."
+        }
+      ]
+    },
+    {
+      "date": "2026-07-05",
+      "kicker": "La trampa del tiempo",
+      "slides": [
+        {
+          "big": "El seguro de vida tiene una trampa: se contrata cuando <strong>no</strong> lo necesitas, no cuando ya."
+        },
+        {
+          "big": "Se compra con dos cosas: salud y edad. Las dos solo se mueven en una dirección."
+        },
+        {
+          "big": "Cada año que esperas, el mismo beneficio cuesta más. Y un diagnóstico puede cerrar la puerta para siempre."
+        },
+        {
+          "big": "La mejor fecha para blindar tu herencia fue hace diez años. La segunda mejor es hoy."
+        }
+      ]
+    }
+  ]
+}
