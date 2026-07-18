@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>¿Cuánto le costaría a tu familia si faltaras mañana?</title>
+<meta name="description" content="Diagnóstico de 5 minutos. Descubre el hueco de liquidez que enfrentaría tu familia." />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" media="print" onload="this.media='all'" />
+<style>
+  :root{
+    --navy:#0a1726; --navy-2:#0e2336; --navy-3:#10283e;
+    --line:rgba(120,180,210,.18);
+    --cream:#f2ece1; --muted:#9fb3c4; --cyan:#3fc8e6; --alert:#ff8a6b;
+    --serif:'Fraunces','Palatino Linotype',Palatino,Georgia,serif;
+    --sans:'Inter',-apple-system,'Segoe UI',Roboto,sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--navy);color:var(--cream);font-family:var(--sans);line-height:1.5;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:620px;margin:0 auto;padding:0 20px}
+
+  header{padding:56px 0 34px;text-align:center}
+  .brand{font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--cyan);font-weight:600;margin-bottom:22px}
+  h1{font-family:var(--serif);font-weight:500;font-size:clamp(28px,6.2vw,42px);line-height:1.12;letter-spacing:-.01em}
+  .sub{color:var(--muted);font-size:16px;margin-top:18px}
+
+  section.step{background:linear-gradient(160deg,var(--navy-2),var(--navy-3));border:1px solid var(--line);
+    border-radius:18px;padding:26px 22px;margin-bottom:16px}
+  .step-n{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--cyan);font-weight:600;margin-bottom:6px}
+  .step-t{font-family:var(--serif);font-size:22px;font-weight:500;margin-bottom:6px}
+  .step-d{color:var(--muted);font-size:14px;margin-bottom:18px}
+
+  .field{margin-bottom:14px}
+  .field label{display:block;font-size:14px;color:var(--cream);margin-bottom:7px;opacity:.9}
+  .money{position:relative}
+  .money span{position:absolute;left:14px;top:50%;transform:translateY(-50%);color:var(--muted);font-size:16px}
+  input[type=text]{width:100%;background:rgba(255,255,255,.04);border:1px solid var(--line);border-radius:11px;
+    color:var(--cream);font-family:var(--sans);font-size:17px;padding:13px 14px 13px 30px;outline:none}
+  input[type=text]:focus{border-color:var(--cyan);background:rgba(63,200,230,.06)}
+  input[type=email]{width:100%;background:rgba(255,255,255,.04);border:1px solid var(--line);border-radius:11px;
+    color:var(--cream);font-family:var(--sans);font-size:17px;padding:14px;outline:none}
+  input[type=email]:focus{border-color:var(--cyan)}
+  .subtotal{display:flex;justify-content:space-between;align-items:center;margin-top:16px;padding-top:14px;
+    border-top:1px solid var(--line);font-size:14px;color:var(--muted)}
+  .subtotal b{font-family:var(--serif);font-size:20px;color:var(--cream);font-weight:500}
+
+  /* resultado */
+  #resultado{border:1px solid rgba(63,200,230,.4);background:linear-gradient(160deg,#0f2b40,#0a1726);
+    border-radius:18px;padding:30px 22px;margin:26px 0 16px;text-align:center;display:none}
+  #resultado.on{display:block}
+  .r-label{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--cyan);font-weight:600}
+  .r-num{font-family:var(--serif);font-size:clamp(38px,10vw,60px);font-weight:500;margin:14px 0 4px;line-height:1}
+  .r-num.malo{color:var(--alert)}
+  .r-num.bien{color:var(--cyan)}
+  .r-exp{color:var(--muted);font-size:15px;margin-top:14px;line-height:1.6}
+  .r-lectura{font-family:var(--serif);font-size:19px;line-height:1.4;margin-top:20px;padding-top:18px;border-top:1px solid var(--line)}
+
+  .capture{background:linear-gradient(160deg,var(--navy-2),var(--navy-3));border:1px solid var(--line);
+    border-radius:18px;padding:26px 22px;margin-bottom:40px;display:none}
+  .capture.on{display:block}
+  .capture h3{font-family:var(--serif);font-size:22px;font-weight:500;line-height:1.25;margin-bottom:10px}
+  .capture p{color:var(--muted);font-size:15px;margin-bottom:18px}
+  button{width:100%;background:var(--cyan);color:#04222b;border:0;border-radius:999px;font-family:var(--sans);
+    font-weight:600;font-size:17px;padding:15px;margin-top:12px;cursor:pointer;transition:.2s}
+  button:hover{transform:translateY(-1px);box-shadow:0 12px 34px rgba(63,200,230,.28)}
+  .fine{color:rgba(159,179,196,.6);font-size:12px;margin-top:12px;text-align:center}
+  footer{text-align:center;padding:10px 0 50px;color:rgba(159,179,196,.45);font-size:12px;letter-spacing:.14em;text-transform:uppercase}
+  .ok{display:none;text-align:center;padding:20px 0}
+  .ok.on{display:block}
+  .ok .big{font-family:var(--serif);font-size:24px;color:var(--cyan)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="brand">Herencia Inteligente</div>
+    <h1>¿Cuánto le costaría a tu familia si faltaras mañana?</h1>
+    <p class="sub">Diagnóstico de 5 minutos. Usa números aproximados — no necesitas exactitud, necesitas la magnitud.</p>
+  </header>
+
+  <section class="step">
+    <div class="step-n">Parte 1</div>
+    <div class="step-t">Lo que tienes</div>
+    <div class="step-d">Tu patrimonio, a grandes rasgos.</div>
+    <div class="field"><label>Valor de tu casa (o casas)</label><div class="money"><span>$</span><input type="text" inputmode="numeric" id="casa" placeholder="0"></div></div>
+    <div class="field"><label>Valor de tus autos</label><div class="money"><span>$</span><input type="text" inputmode="numeric" id="autos" placeholder="0"></div></div>
+    <div class="field"><label>Inversiones, ahorro y afore</label><div class="money"><span>$</span><input type="text" inputmode="numeric" id="inver" placeholder="0"></div></div>
+    <div class="field"><label>Negocio o consultorio (si aplica)</label><div class="money"><span>$</span><input type="text" inputmode="numeric" id="negocio" placeholder="0"></div></div>
+    <div class="subtotal"><span>Patrimonio total</span><b id="sA">$0</b></div>
+  </section>
+
+  <section class="step">
+    <div class="step-n">Parte 2</div>
+    <div class="step-t">Lo que está disponible de verdad</div>
+    <div class="step-d">De todo lo anterior: ¿cuánto podría usar tu familia <em>la semana que viene</em>, sin vender nada y sin permiso de un juez?</div>
+    <div class="field"><label>Liquidez inmediata</label><div class="money"><span>$</span><input type="text" inputmode="numeric" id="liquidez" placeholder="0"></div></div>
+  </section>
+
+  <section class="step">
+    <div class="step-n">Parte 3</div>
+    <div class="step-t">Lo que hay que pagar</div>
+    <div class="step-d">El costo del trámite se calcula solo (10% del patrimonio, el promedio del rango 5%–15%).</div>
+    <div class="field"><label>Deudas e hipoteca pendiente</label><div class="money"><span>$</span><input type="text" inputmode="numeric" id="deudas" placeholder="0"></div></div>
+    <div class="subtotal"><span>Costo estimado del juicio sucesorio</span><b id="sJuicio">$0</b></div>
+    <div class="subtotal"><span>Gastos funerarios y trámites</span><b>$150,000</b></div>
+    <div class="subtotal"><span>Total a pagar</span><b id="sC">$0</b></div>
+  </section>
+
+  <section class="step">
+    <div class="step-n">Parte 4</div>
+    <div class="step-t">El gasto que no se detiene</div>
+    <div class="step-d">Mientras dura el juicio, la vida sigue costando. Usamos 24 meses: el promedio de un sucesorio.</div>
+    <div class="field"><label>Gasto mensual de tu familia (casa, colegiaturas, comida, seguros)</label><div class="money"><span>$</span><input type="text" inputmode="numeric" id="gasto" placeholder="0"></div></div>
+    <div class="subtotal"><span>× 24 meses</span><b id="sD">$0</b></div>
+  </section>
+
+  <div id="resultado">
+    <div class="r-label">El hueco</div>
+    <div class="r-num" id="hueco">$0</div>
+    <div class="r-exp">Es lo que tu familia tendría que conseguir —vendiendo con prisa o pidiendo prestado— en el peor momento de su vida.</div>
+    <div class="r-lectura" id="lectura"></div>
+  </div>
+
+  <div class="capture" id="capture">
+    <h3>¿Quieres el desglose de cómo se cierra ese hueco, con tus números?</h3>
+    <p>Te lo mando por correo. Sin llamadas, sin insistencia — solo el análisis.</p>
+    <form id="form">
+      <input type="email" id="correo" placeholder="tu@correo.com" required>
+      <button type="submit">Mándame el desglose</button>
+    </form>
+    <div class="fine">Un correo. Si no te sirve, te das de baja en un clic.</div>
+  </div>
+
+  <div class="ok" id="ok">
+    <p class="big">Listo. Revisa tu correo en unos minutos.</p>
+  </div>
+
+  <footer>Yo no vendo. A mí me compran.</footer>
+</div>
+
+<script>
+const F = n => '$' + Math.round(n).toLocaleString('es-MX');
+const val = id => { const v = document.getElementById(id).value.replace(/[^\d]/g,''); return v ? parseInt(v,10) : 0; };
+const ids = ['casa','autos','inver','negocio','liquidez','deudas','gasto'];
+
+// formatea mientras escriben
+ids.forEach(id=>{
+  const el = document.getElementById(id);
+  el.addEventListener('input', ()=>{
+    const raw = el.value.replace(/[^\d]/g,'');
+    el.value = raw ? parseInt(raw,10).toLocaleString('es-MX') : '';
+    calc();
+  });
+});
+
+const FUNERAL = 150000, MESES = 24, PCT_JUICIO = .10;
+
+function calc(){
+  const A = val('casa')+val('autos')+val('inver')+val('negocio');
+  const B = val('liquidez');
+  const juicio = A * PCT_JUICIO;
+  const C = val('deudas') + juicio + FUNERAL;
+  const D = val('gasto') * MESES;
+  const hueco = C + D - B;
+
+  document.getElementById('sA').textContent = F(A);
+  document.getElementById('sJuicio').textContent = F(juicio);
+  document.getElementById('sC').textContent = F(C);
+  document.getElementById('sD').textContent = F(D);
+
+  // el resultado aparece cuando ya hay datos suficientes
+  const listo = A > 0 && val('gasto') > 0;
+  const box = document.getElementById('resultado');
+  const cap = document.getElementById('capture');
+  box.classList.toggle('on', listo);
+  cap.classList.toggle('on', listo);
+  if(!listo) return;
+
+  const el = document.getElementById('hueco');
+  el.textContent = hueco > 0 ? F(hueco) : F(0);
+  el.className = 'r-num ' + (hueco > 0 ? 'malo' : 'bien');
+
+  const anual = val('gasto') * 12;
+  let txt;
+  if (hueco <= 0) txt = 'Estás en el pequeño porcentaje de mexicanos con la sucesión realmente resuelta. Muy bien.';
+  else if (hueco < anual) txt = 'Es un hueco manejable, pero doloroso: tu familia lo pasaría apretada justo cuando menos puede.';
+  else txt = 'Tu familia tendría que rematar patrimonio para sobrevivir el trámite. Y lo que se vende con prisa, se vende barato.';
+  document.getElementById('lectura').textContent = txt;
+}
+
+// captura (pendiente conectar a la plataforma de correo)
+document.getElementById('form').addEventListener('submit', e=>{
+  e.preventDefault();
+  const datos = {
+    correo: document.getElementById('correo').value,
+    patrimonio: val('casa')+val('autos')+val('inver')+val('negocio'),
+    liquidez: val('liquidez'),
+    deudas: val('deudas'),
+    gasto_mensual: val('gasto'),
+    hueco: (val('deudas') + (val('casa')+val('autos')+val('inver')+val('negocio'))*PCT_JUICIO + FUNERAL) + (val('gasto')*MESES) - val('liquidez')
+  };
+  console.log('LEAD:', datos); // <- aquí se conecta Kit/MailerLite
+  document.getElementById('capture').classList.remove('on');
+  document.getElementById('ok').classList.add('on');
+});
+</script>
+</body>
+</html>
