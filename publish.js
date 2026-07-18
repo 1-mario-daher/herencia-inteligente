@@ -21,6 +21,7 @@ const path = require('path');
 
 const GRAPH = 'https://graph.facebook.com/v21.0';
 const DIR = __dirname;
+const STAMP = Date.now(); // anti-cache para las URLs de imagen
 
 // ---------- config ----------
 const ig_user_id = '17841447038623900';                                                 // herencia.inteligente
@@ -81,12 +82,14 @@ async function waitReady(containerId) {
   // 1) container por cada imagen
   const children = [];
   for (const file of slides) {
-    const image_url = `${image_base_url.replace(/\/$/, '')}/posts/${folder}/${file}`;
+    // ?v= rompe el cache de Meta: si un intento falla, cachea el fallo para esa URL exacta
+    const image_url = `${image_base_url.replace(/\/$/, '')}/posts/${folder}/${file}?v=${STAMP}`;
     const r = await g(`/${ig_user_id}/media`, {
       image_url, is_carousel_item: 'true', access_token: token
     });
     children.push(r.id);
     console.log('  ✓ container', file, '->', r.id);
+    await new Promise(res => setTimeout(res, 2000)); // pausa: IG se atraganta si le pegamos muy seguido
   }
 
   // 2) container del carrusel
