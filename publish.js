@@ -23,13 +23,15 @@ const GRAPH = 'https://graph.facebook.com/v21.0';
 const DIR = __dirname;
 
 // ---------- config ----------
-const secretPath = path.join(DIR, '.secret.json');
-if (!fs.existsSync(secretPath)) {
-  console.error('Falta .secret.json (se crea tras autorizar la cuenta). Aun no puedo publicar.');
+const ig_user_id = '17841447038623900';                                                 // herencia.inteligente
+const image_base_url = 'https://raw.githubusercontent.com/1-mario-daher/herencia-inteligente/main';
+const tokenPath = path.join(DIR, 'token.txt');
+if (!fs.existsSync(tokenPath)) {
+  console.error('Falta el archivo token.txt (pega ahi el token de Instagram). Aun no puedo publicar.');
   process.exit(1);
 }
-const cfg = JSON.parse(fs.readFileSync(secretPath, 'utf8'));
-const { ig_user_id, token, image_base_url } = cfg;
+const token = fs.readFileSync(tokenPath, 'utf8').trim();
+if (!token || !/^EAA/.test(token)) { console.error('El .token no tiene un token valido (debe empezar con EAA).'); process.exit(1); }
 
 // ---------- elegir post ----------
 const data = JSON.parse(fs.readFileSync(path.join(DIR, 'posts.json'), 'utf8'));

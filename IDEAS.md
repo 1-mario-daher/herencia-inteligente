@@ -1,52 +1,48 @@
-# Banco de ideas — Posts de herencia (México, alto patrimonio)
+# Banco de ideas — Posts de herencia
 
-> Mario: avienta ideas aquí en crudo, una por línea. No te preocupes por redactar bonito.
-> Yo (Claude) convierto cada idea en un carrusel terminado, le doy el tono @itsfinancialeducation,
-> lo meto a `posts.json` y se publica. Cuando uso una idea, la muevo a "Ya publicadas".
+> **Avatar (a quién le hablamos):** clase media-alta mexicana. Profesionistas y autoempleados
+> que ganan bien (~60-200k/mes): doctores, gerentes, dueños de un negocio chico, empleados de nivel.
+> Tienen su casa, un par de autos, tal vez un depa en Acapulco o casita en Valle, algo de ahorro
+> e inversiones. **NO son multimillonarios** — la hicieron bien con años de chamba y quieren dejar
+> todo amarrado para su familia. NO le hablamos al tycoon con family office (ese ya tiene banca privada
+> y no anda en IG). Aspiracional pero **aterrizado**: que el lector piense "esto es de mí".
 >
-> Regla de oro: cada post ENSEÑA algo tan bueno que el lector siente "qué tip tan cabrón",
-> y de pasada entiende que esto se resuelve con un seguro de herencia. Nunca vender de frente.
+> Regla de oro: cada post ENSEÑA algo tan bueno que el lector siente "qué tip tan cabrón", y de
+> pasada entiende que esto se resuelve con un seguro de herencia. Nunca vender de frente.
 > "Yo no vendo. A mí me compran."
 
 ---
 
-## 🔥 Ideas pendientes (las que tú me das)
+## 🔥 Ideas pendientes (calibradas al avatar)
 
-Mario: agrega las tuyas aquí arriba. Abajo te dejé una tanda lista para arrancar.
+Mario: agrega las tuyas arriba de esta lista. Abajo está la tanda lista.
 
-### Tanda inicial (Claude, listas para convertir)
 - El mito de "con mi testamento ya quedé" (testamento ≠ liquidez ≠ sin pleito)
-- Por qué el empresario con varias propiedades es el MÁS expuesto a un pleito de herencia
-- Qué le pasa a la empresa familiar el día que muere el dueño sin plan
-- Cuánto cuesta REALMENTE morir en México (números del juicio sucesorio)
-- "Mis hijos se van a entender" — la frase que más dinero ha costado
-- El concubinato y los hijos fuera del matrimonio: la bomba que nadie ve venir
-- Albacea: el puesto que parece honor y termina en pleito
-- Por qué los bienes raíces son la PEOR forma de heredar (sin liquidez al lado)
-- El costo de oportunidad de tener 50 millones "dormidos" en ladrillos
-- Heredar deudas: lo que tus hijos heredan antes que el dinero
-- Donación en vida vs. herencia: cuándo cada una te cuesta más
-- El seguro como "el hijo que siempre tiene efectivo" el día que faltas
-- Familias que se destruyeron por NO tener 500 mil líquidos a tiempo
-- La diferencia entre rico y patrimonialmente ordenado
-- Fideicomiso vs. seguro: qué resuelve cada uno (sin tecnicismos)
+- Tu esposa/o NO podrá tocar la cuenta del banco por meses cuando faltes — aunque sea cuenta conjunta
+- Lo que le pasa a tu casa y tus autos el día que faltas sin plan (se congelan en el juicio)
+- Cuánto cuesta REALMENTE morir en México sin plan (notario, abogados, tiempo) para un patrimonio "normal"
+- "Mis hijos se van a entender" — la frase que más familias ha roto (pleito por una casa)
+- Doctores y autoempleados: tu consultorio/negocio no le sirve a tu familia si TÚ eras el negocio
+- ¿Sigue pagada la universidad de tus hijos si faltas mañana? (colegiaturas y el plan que las blinda)
+- Heredar deudas: la hipoteca y los créditos no se mueren contigo
+- "Gano bien pero no soy millonario" — justo por eso el seguro es TU herramienta, no la del que ya tiene colchón
+- El depa en Acapulco que suena a lujo pero en un juicio se vuelve una carga (no se puede vender, sigue generando gastos)
+- Tu familia no necesita más bienes: necesita EFECTIVO el día 1 (para gastos y para no rematar con prisa)
+- La diferencia entre tener patrimonio y tenerlo ordenado
+- Cada año que esperas, el mismo seguro cuesta más — y tu salud puede cerrarte la puerta
+- Seguro vs. testamento vs. fideicomiso: qué resuelve cada uno, en cristiano
+- Lo que SÍ puedes dejar amarrado en una tarde (el plan mínimo que todo profesionista debería tener)
 
 ## 💡 Ángulos que funcionan (para inspirarte)
-- Costos ocultos (juicio, albacea, notario, peritos, impuestos al vender)
-- Liquidez vs. patrimonio "en papel"
-- Igualar herederos sin partir bienes
-- Privacidad y certeza vs. testamento público e impugnable
-- Asegurabilidad / la trampa del tiempo (salud + edad)
-- Empresa familiar y sucesión del negocio
-- Errores caros que cometen los ricos
+- El dolor cotidiano y concreto (la cuenta congelada, la colegiatura, la hipoteca)
+- "Esto es de mí, no de un multimillonario" — aterrizado, con la casa/los autos/el ahorro
+- Liquidez vs. patrimonio "en papel" (todo en ladrillos, nada en efectivo)
+- Igualar herederos sin partir bienes (una casa no se parte en tres)
+- Casos disfrazados ("un doctor con consultorio propio y tres hijos…")
 - Comparaciones: "lo que crees vs. lo que pasa"
-- Casos disfrazados ("un señor con 3 hijos y una fábrica...")
+- Aspiracional de contraste, con medida (Masaryk, Valle) — de vez en cuando, no el default
 
-## ✅ Ya publicadas
-- 2026-06-28 · El encuadre
-- 2026-06-27 · El costo de no planear
-- 2026-06-26 · Liquidez
-- 2026-06-25 · Lo que el SAT no te dijo
-- 2026-06-24 · El error de los iguales
-- 2026-06-23 · Privacidad y certeza
-- 2026-06-22 · La trampa del tiempo
+## ✅ Ya publicadas / programadas
+- 2026-06-29 · El encuadre — PUBLICADO
+- 2026-06-30 · El costo de no planear — aprobado, programado
+- (pendientes de recalibrar antes de su día: Liquidez, Lo que el SAT no te dijo, El error de los iguales, Privacidad y certeza, La trampa del tiempo)

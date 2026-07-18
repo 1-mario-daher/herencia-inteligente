@@ -15,29 +15,34 @@
           "big": "Heredar no es firmar un testamento. Es decidir cómo el dinero cruza a tus hijos sin romperse en el camino."
         },
         {
-          "big": "Quien tiene mucho no improvisa su sucesión. La arquitecta.",
+          "big": "Quien tiene mucho no improvisa su sucesión. La diseña.",
           "sub": "De eso se trata todo lo que sigue."
         }
-      ]
+      ],
+      "published": "2026-07-17T21:43:50.104Z",
+      "ig_media_id": "18219293527327528"
     },
     {
       "date": "2026-06-30",
       "kicker": "El costo de no planear",
       "slides": [
         {
-          "big": "Cuando alguien con patrimonio muere sin estructura en México, lo primero que hereda su familia no es el dinero. Es un <strong>juicio</strong>."
+          "big": "Cuando alguien con <strong>alto patrimonio</strong> muere sin estructura en México, lo primero que hereda su familia no es el dinero. Es un <strong>juicio</strong>."
         },
         {
-          "big": "Un juicio sucesorio aquí promedia entre 1 y 3 años. En ese tiempo, las cuentas se congelan."
+          "big": "Cada juicio sucesorio promedia de <strong>1 a 3 años</strong>, según el tamaño del patrimonio. Todo ese tiempo, las cuentas se congelan."
         },
         {
-          "big": "Tu familia hereda tus bienes… y la imposibilidad de tocarlos justo cuando más los necesita."
+          "big": "Heredan tus bienes… pero es <strong>imposible tocarlos</strong> cuando más los necesitan."
         },
         {
-          "big": "Notario, albacea, peritos, honorarios. Una sucesión mal armada se come entre el <strong>5% y el 15%</strong> del patrimonio."
+          "big": "¿Has visto todas esas casas abandonadas en <strong>Masaryk</strong>? Es justo eso."
         },
         {
-          "big": "Todo eso es evitable. Con una decisión tomada hoy, en vida."
+          "big": "Notario, albacea, peritos: se comen entre el <strong>5% y el 15%</strong> del patrimonio. Y los pleitos entre hermanos, el resto."
+        },
+        {
+          "big": "Todo eso es 100% evitable. Pero la decisión se toma <strong>hoy</strong>, no mañana, cuando ya no puedes."
         }
       ]
     },
@@ -49,7 +54,7 @@
           "big": "Tus herederos no necesitan más bienes. Necesitan <strong>efectivo</strong> el día que tú faltes."
         },
         {
-          "big": "Un patrimonio puede valer 50 millones de pesos y no tener 500 mil líquidos el día exacto en que hacen falta."
+          "big": "Puedes tener casa, autos y algo ahorrado, y aun así no dejar ni <strong>medio millón líquido</strong> el día exacto en que hace falta."
         },
         {
           "big": "Sin liquidez, la familia vende. Y lo que se vende con prisa, se vende barato."
@@ -139,6 +144,34 @@
           "big": "La mejor fecha para blindar tu herencia fue hace diez años. La segunda mejor es hoy."
         }
       ]
+    },
+    {
+      "date": "2026-07-06",
+      "kicker": "Más rico de lo que crees",
+      "slides": [
+        {
+          "big": "En México no necesitas ganar millones para ser rico. Y lo más probable es <strong>que ya lo seas</strong>… sin darte cuenta."
+        },
+        {
+          "big": "Si ganas más de <strong>$21,221</strong> al mes, ya estás en el <strong>10% más alto</strong> del país. Piénsalo: el otro 90% gana menos."
+        },
+        {
+          "big": "¿Ganas más de <strong>$53,478</strong>? Estás en el <strong>1%</strong>. 99 de cada 100 ganan menos que tú — no lo notas porque te rodeas de gente de tu mismo nivel."
+        },
+        {
+          "big": "¿Más de <strong>$110,000</strong> al mes? Uno de cada mil. Tienes uno de los sueldos más privilegiados de México. Valóralo: deja de compararte con los de arriba."
+        },
+        {
+          "big": "Lo estás haciendo muy bien. Ahora lo más importante no es ganar más: es empezar a <strong>proteger lo que construiste</strong>, para que no se desmorone."
+        }
+      ],
+      "close": {
+        "kicker": "Síguenos",
+        "big": "Síguenos para más sobre <strong>riqueza, patrimonio y herencia</strong>.",
+        "line": "Guárdalo y compártelo.",
+        "foot": "@herencia.inteligente"
+      },
+      "caption": "En México no necesitas ganar millones para ser rico. Probablemente ya lo eres sin darte cuenta.\n\nDesliza y checa en qué percentil caes →\n\nGuárdalo y compártelo con alguien que no valora lo bien que la hace.\n\nSíguenos para más sobre riqueza, patrimonio y herencia.\n\n#riqueza #patrimonio #finanzas #mexico #dinero #herencia #sueldos"
     }
   ]
 }

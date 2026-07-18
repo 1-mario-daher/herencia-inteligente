@@ -1,6 +1,8 @@
 # Nunca subir secretos ni basura
 .secret.json
 *.token
+token.txt
+appsecret.txt
 _pega_token_aqui.txt
 node_modules/
 .claude/

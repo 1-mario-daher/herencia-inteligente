@@ -30,17 +30,24 @@ const outDir = path.join(DIR, 'posts', `${post.date}-${slug}`);
 fs.mkdirSync(outDir, { recursive: true });
 
 // ---------- plantilla de un slide ----------
-function slideHTML({ kick, page, total, big, sub, isLead, isCTA }) {
+// separa cada frase en su propio bloque, con aire entre ellas (mejor lectura)
+function spaced(html) {
+  const parts = html.split(/(?<=[.?!])\s+(?=[¿¡"'A-ZÁÉÍÓÚÑ0-9$])/);
+  if (parts.length <= 1) return html;
+  return parts.map(p => `<span class="sent">${p}</span>`).join('');
+}
+
+function slideHTML({ kick, page, total, big, sub, isLead, isCTA, ctaLine, ctaFoot }) {
   const bg = isCTA
     ? 'linear-gradient(158deg,#0f2b40,#0a1726)'
     : 'linear-gradient(158deg,#0e2336,#10283e 55%,#0a1726)';
   const bigSize = isLead ? 68 : 58;
   const pill = isCTA
-    ? `<div class="pillrow"><span class="pill">Escríbeme  →</span></div>`
+    ? `<div class="cta-line">${ctaLine || 'Escríbeme.'}</div>`
     : '';
   const foot = isCTA
-    ? `<div class="foot cta"><span class="lema">Yo no vendo. A mí me compran.</span></div>`
-    : `<div class="foot"><span>@herencia.inteligente</span><span class="name">Mario Daher</span></div>`;
+    ? `<div class="foot cta"><span class="lema">${ctaFoot || 'Yo no vendo. A mí me compran.'}</span></div>`
+    : `<div class="foot"><span>@herencia.inteligente</span></div>`;
   return `<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500&family=Inter:wght@400;600&display=swap">
 <style>
@@ -57,10 +64,11 @@ function slideHTML({ kick, page, total, big, sub, isLead, isCTA }) {
   .pg{font-size:25px;color:var(--muted);letter-spacing:.1em}
   .big{font-family:var(--serif);font-weight:400;line-height:1.19;letter-spacing:-.01em;font-size:${bigSize}px}
   .big strong{color:var(--cyan);font-weight:500}
+  .big .sent{display:block}
+  .big .sent + .sent{margin-top:.55em}
   .sub{color:var(--muted);font-size:34px;margin-top:30px;line-height:1.5}
-  .pillrow{margin-top:52px}
-  .pill{display:inline-block;background:#3fc8e6;color:#04222b;font-family:var(--sans);
-    font-weight:700;font-size:30px;padding:22px 44px;border-radius:999px;letter-spacing:.01em}
+  .cta-line{margin-top:46px;font-family:var(--serif);font-style:italic;font-weight:400;
+    font-size:44px;color:var(--cyan);letter-spacing:-.01em}
   .foot{position:absolute;bottom:96px;left:110px;right:110px;display:flex;justify-content:space-between;align-items:center;
     font-size:23px;letter-spacing:.16em;text-transform:uppercase;color:rgba(159,179,196,.62)}
   .foot .name{color:var(--cream);opacity:.8}
@@ -69,7 +77,7 @@ function slideHTML({ kick, page, total, big, sub, isLead, isCTA }) {
 </style></head><body>
   <div class="hair"></div>
   <div class="top"><span class="kick">${kick}</span><span class="pg">${page}/${total}</span></div>
-  <div class="big">${big}</div>
+  <div class="big">${spaced(big)}</div>
   ${sub ? `<div class="sub">${sub}</div>` : ''}
   ${pill}
   ${foot}
@@ -81,9 +89,12 @@ const total = post.slides.length + 1;
 const slides = post.slides.map((s, i) => ({
   kick: post.kicker, page: i + 1, total, big: s.big, sub: s.sub, isLead: i === 0
 }));
+const cl = post.close || {};
 slides.push({
-  kick: 'Cierre', page: total, total, isCTA: true,
-  big: 'No te quiero vender nada. Pero si algo de esto te movió, <strong>ya sabes a qué me dedico.</strong>'
+  kick: cl.kicker || 'Cierre', page: total, total, isCTA: true,
+  big: cl.big || 'No te quiero vender nada. Pero si algo de esto te movió, <strong>ya sabes a qué me dedico.</strong>',
+  ctaLine: cl.line || 'Escríbeme.',
+  ctaFoot: cl.foot || 'Yo no vendo. A mí me compran.'
 });
 
 // ---------- render con Chrome headless ----------
@@ -102,7 +113,7 @@ slides.forEach((s, i) => {
 });
 
 // ---------- caption para Instagram ----------
-const caption =
+const caption = post.caption ||
 `${post.slides[0].big.replace(/<[^>]+>/g, '')}
 
 Desliza →
