@@ -3,6 +3,8 @@
 *.token
 token.txt
 appsecret.txt
+ftp.json
+deploy_diagnostico/leads.csv
 _pega_token_aqui.txt
 node_modules/
 .claude/
