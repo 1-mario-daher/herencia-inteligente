@@ -129,7 +129,13 @@
         {
           "big": "Todo eso es 100% evitable. Pero la decisión se toma <strong>hoy</strong>, no mañana, cuando ya no puedes."
         }
-      ]
+      ],
+      "close": {
+        "kicker": "Síguenos",
+        "big": "El algoritmo te <strong>regaló</strong> hoy este post. Si no nos sigues, <strong>no nos volverás a ver</strong>.",
+        "line": "Guárdalo y compártelo.",
+        "foot": "@herencia.inteligente"
+      }
     },
     {
       "date": "2026-07-24",
@@ -246,7 +252,9 @@
         {
           "big": "La mejor fecha para blindar tu herencia fue hace diez años. La segunda mejor es hoy."
         }
-      ]
+      ],
+      "published": "2026-08-05T13:38:45.513Z",
+      "ig_media_id": "18023620688890105"
     },
     {
       "date": "2026-07-29",
@@ -313,6 +321,68 @@
       "caption": "En abril, el Senado puso sobre la mesa gravar las herencias en México. La Presidencia la rechazó… por ahora.\n\nDesliza →\n\nLa lección no es pánico: es estructura. Lo que está dentro de la masa hereditaria queda expuesto a lo que el Congreso decida mañana.\n\nGuárdalo y compártelo con alguien que debería enterarse.\n\nSi algo te resuena, escríbeme por DM y empecemos la conversación.\n\n#herencia #impuestos #patrimonio #sucesion #mexico #planeacionpatrimonial #seguros",
       "published": "2026-08-04T21:30:16.816Z",
       "ig_media_id": "18109266410469840"
+    },
+    {
+      "date": "2026-07-31",
+      "kicker": "El 12% mágico",
+      "slides": [
+        {
+          "big": "«Les dejo 8 millones; con eso viven con <strong>$80,000 al mes</strong>.» Ese plan tiene un error del <strong>doble</strong>."
+        },
+        {
+          "big": "Asume un rendimiento del <strong>12% anual</strong>, garantizado, para siempre. ¿De dónde sale ese 12%? De la imaginación."
+        },
+        {
+          "big": "La referencia real sin riesgo en México se llama Cetes. Hoy paga alrededor del <strong>6%</strong>. La mitad."
+        },
+        {
+          "big": "Con 6%, esos 8 millones dan <strong>$40,000 al mes</strong>. No 80."
+        },
+        {
+          "big": "¿Y si tu familia saca los $80,000 de todos modos? El dinero se acaba en <strong>unos 12 años</strong>. No era «para toda la vida»."
+        },
+        {
+          "big": "Un plan de herencia no se hace con rendimientos imaginarios. Se hace con lo que tu familia <strong>realmente puede sacar</strong>."
+        }
+      ],
+      "close": {
+        "kicker": "Sígueme",
+        "big": "El algoritmo te <strong>regaló</strong> hoy este post. Si no nos sigues, <strong>no nos volverás a ver</strong>.",
+        "line": "Guárdalo y compártelo.",
+        "foot": "@herencia.inteligente"
+      },
+      "caption": "«Les dejo 8 millones y viven con $80,000 al mes.» Ese plan tiene un error del doble.\n\nDesliza →\n\nCetes hoy paga alrededor del 6%, no el 12% que asume tu plan. Y si sacan los 80 de todos modos, el dinero se acaba en unos 12 años.\n\nGuárdalo y compártelo con alguien que trae un 12% imaginario en la cabeza.\n\nEl algoritmo te regaló hoy este post. Si no nos sigues, no nos volverás a ver.\n\n#herencia #patrimonio #cetes #finanzaspersonales #mexico #inversion #rendimiento"
+    },
+    {
+      "date": "2026-08-01",
+      "kicker": "El ladrón silencioso",
+      "slides": [
+        {
+          "big": "Aunque saques el rendimiento, hay un ladrón trabajando 24/7 contra tu herencia: la <strong>inflación</strong>."
+        },
+        {
+          "big": "Cada año, los mismos pesos compran <strong>4-5% menos</strong>. Suena poquito. No lo es."
+        },
+        {
+          "big": "A ese ritmo, los $80,000 de hoy comprarán <strong>la mitad en unos 15 años</strong>. Tu familia sentiría el recorte año tras año."
+        },
+        {
+          "big": "Por eso un plan serio le <strong>regresa la inflación al capital</strong> cada año — y solo se vive del rendimiento real, no del imaginario."
+        },
+        {
+          "big": "Números honestos: para dejar $80,000 al mes <strong>de por vida</strong>, no necesitas 8 millones. Necesitas cerca de <strong>19</strong>."
+        },
+        {
+          "big": "En esto no piensa casi nadie — ni los más financieramente inteligentes. Y es la diferencia entre una herencia que <strong>dura</strong>… y una que se evapora en silencio."
+        }
+      ],
+      "close": {
+        "kicker": "Sígueme",
+        "big": "El algoritmo te <strong>regaló</strong> hoy este post. Si no nos sigues, <strong>no nos volverás a ver</strong>.",
+        "line": "Guárdalo y compártelo.",
+        "foot": "@herencia.inteligente"
+      },
+      "caption": "Aunque le atines al rendimiento, hay un ladrón trabajando 24/7 contra tu herencia: la inflación.\n\nDesliza →\n\nLos $80,000 de hoy comprarán la mitad en unos 15 años. Por eso un plan serio le regresa la inflación al capital — y por eso dejar $80,000 al mes de por vida cuesta cerca de 19 millones, no 8.\n\nGuárdalo y compártelo con alguien que cree que ya la armó.\n\nEl algoritmo te regaló hoy este post. Si no nos sigues, no nos volverás a ver.\n\n#herencia #inflacion #patrimonio #finanzaspersonales #mexico #planeacionpatrimonial"
     }
   ]
 }
