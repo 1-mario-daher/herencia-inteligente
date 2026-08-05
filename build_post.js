@@ -92,8 +92,8 @@ const slides = post.slides.map((s, i) => ({
 const cl = post.close || {};
 slides.push({
   kick: cl.kicker || 'Cierre', page: total, total, isCTA: true,
-  big: cl.big || 'No te quiero vender nada. Pero si algo te resuena, <strong>sabes a qué me dedico.</strong>',
-  ctaLine: cl.line || 'Escríbeme por DM y empecemos la conversación.',
+  big: cl.big || 'Yo no persigo a nadie. Ayudo a quienes <strong>me escriben por DM.</strong>',
+  ctaLine: cl.line || 'Una conversación lo inicia todo.',
   ctaFoot: cl.foot || 'Yo no vendo. A mí me compran.'
 });
 
