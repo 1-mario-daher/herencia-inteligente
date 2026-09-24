@@ -2,6 +2,402 @@
   "_comment": "Banco de posts publicados. El robot diario AGREGA un objeto nuevo al inicio del arreglo 'posts'. La pagina muestra del mas reciente al mas viejo. Cada slide: { big: HTML con <strong> para resaltar en cyan, sub: opcional }.",
   "posts": [
     {
+      "date": "2026-10-05",
+      "kicker": "La cuenta congelada",
+      "tipo": "valor",
+      "published": null,
+      "slides": [
+        {
+          "big": "El día que faltes, tu esposa puede <strong>no poder sacar un peso</strong> del banco."
+        },
+        {
+          "big": "No es un trámite lento. Es que la cuenta de un difunto se detiene hasta que un juez diga quién manda ahí.",
+          "sub": "Y eso, en México, no se mide en semanas."
+        },
+        {
+          "big": "La mayoría de la gente cree que por ser su esposa, ya está. No está.",
+          "sub": "Ser cónyuge te da derecho a heredar. No te da acceso el martes."
+        },
+        {
+          "big": "Lo que casi nadie usa: los bancos en México te dejan <strong>designar beneficiarios</strong> en tus cuentas.",
+          "sub": "Es gratis, se hace en la sucursal o en la app, y saca ese dinero del juicio."
+        },
+        {
+          "big": "Hazlo esta semana. Cuenta por cuenta, banco por banco.",
+          "sub": "Es lo más barato que vas a hacer por tu familia en tu vida."
+        }
+      ]
+    },
+    {
+      "date": "2026-10-06",
+      "kicker": "Ya hice testamento",
+      "tipo": "valor",
+      "published": null,
+      "slides": [
+        {
+          "big": "El testamento dice <strong>quién</strong> hereda. No dice <strong>cuándo</strong>, ni <strong>con qué</strong>."
+        },
+        {
+          "big": "Hacer testamento es de las cosas más inteligentes que puedes hacer. Solo que resuelve una sola cosa: evita el pleito sobre a quién le toca.",
+          "sub": "No evita el proceso. No evita el tiempo. No evita los costos."
+        },
+        {
+          "big": "Con testamento también hay juicio sucesorio. Es más corto y más tranquilo, pero lo hay.",
+          "sub": "Y mientras corre, los bienes no se venden ni se reparten."
+        },
+        {
+          "big": "Hay tres problemas distintos y la gente cree que son uno: <strong>a quién le toca</strong>, <strong>cuánto tarda</strong> y <strong>de qué van a vivir mientras</strong>.",
+          "sub": "El testamento resuelve el primero. Nada más."
+        },
+        {
+          "big": "Si ya hiciste testamento, vas adelante de casi todos. Ahora falta la otra mitad."
+        }
+      ]
+    },
+    {
+      "date": "2026-10-07",
+      "kicker": "La casa congelada",
+      "tipo": "valor",
+      "published": null,
+      "slides": [
+        {
+          "big": "Tu casa no se hereda el día que faltas. Se <strong>congela</strong>."
+        },
+        {
+          "big": "Mientras el juicio corre, no se vende, no se hipoteca y no se reparte. Pero el predial sigue llegando.",
+          "sub": "El mantenimiento también. Y los seguros."
+        },
+        {
+          "big": "Lo mismo con los autos, el terreno y el depa que rentabas.",
+          "sub": "Todo lo que era tu patrimonio se convierte en gasto sin generar un peso."
+        },
+        {
+          "big": "Por eso las familias con mucho en ladrillos y poco disponible son las que peor la pasan.",
+          "sub": "En el papel son ricas. En la vida diaria no alcanzan."
+        },
+        {
+          "big": "La pregunta no es cuánto tienes. Es <strong>de qué van a vivir los tuyos mientras se desatora</strong>."
+        }
+      ]
+    },
+    {
+      "date": "2026-10-08",
+      "kicker": "Se van a entender",
+      "tipo": "valor",
+      "published": null,
+      "slides": [
+        {
+          "big": "\"Mis hijos se van a entender.\" La frase que ha roto más familias mexicanas."
+        },
+        {
+          "big": "Y es cierta. Se entienden. Hasta que hay que decidir qué hacer con una casa que no se puede partir en tres.",
+          "sub": "Uno la quiere vender. Otro quiere vivir ahí. El tercero necesita el dinero ya."
+        },
+        {
+          "big": "Ninguno es el malo. Los tres tienen razón desde donde están parados.",
+          "sub": "El problema no es la gente. Es que el bien es indivisible y la decisión no tiene dueño."
+        },
+        {
+          "big": "Los pleitos de herencia casi nunca son por codicia. Son por <strong>falta de instrucciones</strong>.",
+          "sub": "Cuando nadie dejó dicho cómo, cada quien propone lo que le conviene. Y eso se siente personal."
+        },
+        {
+          "big": "Dejar las cosas claras no es desconfiar de tus hijos. Es <strong>protegerlos de tener que decidir</strong>."
+        }
+      ]
+    },
+    {
+      "date": "2026-10-09",
+      "kicker": "No soy millonario",
+      "tipo": "venta",
+      "published": null,
+      "slides": [
+        {
+          "big": "\"Eso es para los ricos.\" Al revés: <strong>entre menos colchón tienes, más te pega</strong>."
+        },
+        {
+          "big": "El que tiene cincuenta millones puede aguantar dos años de juicio sin despeinarse. Le sobra de dónde.",
+          "sub": "Su familia no cambia de vida mientras se resuelve."
+        },
+        {
+          "big": "El que la hizo bien pero normal —su casa, sus autos, lo que juntó en veinticinco años— no tiene ese margen.",
+          "sub": "Su familia sí cambia de vida. Desde el primer mes."
+        },
+        {
+          "big": "Por eso esta herramienta no es la del millonario. Es <strong>la tuya</strong>.",
+          "sub": "Es la única forma de poner una cantidad grande sobre la mesa sin haberla juntado todavía."
+        },
+        {
+          "big": "Yo no persigo a nadie. Ayudo a los que <strong>me escriben por DM</strong> — por ejemplo, a sacar cuánto le faltaría a su familia el mes uno."
+        }
+      ]
+    },
+    {
+      "date": "2026-10-10",
+      "kicker": "Lo que cuesta",
+      "tipo": "valor",
+      "published": null,
+      "slides": [
+        {
+          "big": "Morirse sin plan en México tiene precio. Y no lo pagas tú."
+        },
+        {
+          "big": "Honorarios de abogado, notario, avalúos, impuestos de traslado de dominio, publicaciones.",
+          "sub": "Se paga durante el proceso, no al final. Con dinero que la familia tiene que poner."
+        },
+        {
+          "big": "Suele medirse en un porcentaje del patrimonio, no en una cifra fija.",
+          "sub": "Entre más tienes, más cuesta desatorarlo."
+        },
+        {
+          "big": "Y el costo que nadie factura: los meses en que nadie puede vender nada y hay que decidir con prisa.",
+          "sub": "Lo que se vende con prisa, se vende barato. Ese descuento es la parte más cara."
+        },
+        {
+          "big": "Un patrimonio ordenado no es más grande. Es el que <strong>llega completo</strong>."
+        }
+      ]
+    },
+    {
+      "date": "2026-10-11",
+      "kicker": "Las deudas",
+      "tipo": "valor",
+      "published": null,
+      "slides": [
+        {
+          "big": "Tus deudas no se mueren contigo. Se quedan <strong>pegadas a lo que dejas</strong>."
+        },
+        {
+          "big": "La herencia se recibe neta: primero se pagan las deudas del difunto, y lo que sobra se reparte.",
+          "sub": "Si hay hipoteca, la casa carga con ella antes de ser de nadie."
+        },
+        {
+          "big": "Buena noticia: muchos créditos hipotecarios en México ya traen un seguro que salda el saldo si el titular fallece.",
+          "sub": "Mala noticia: casi nadie ha leído su contrato para saber si el suyo lo trae, ni por cuánto."
+        },
+        {
+          "big": "Saca tu carátula esta semana y búscalo. Hipoteca, crédito de auto, tarjetas.",
+          "sub": "Diez minutos que pueden valer varios millones."
+        },
+        {
+          "big": "No se trata de tener miedo. Se trata de <strong>saber qué está cubierto y qué no</strong>."
+        }
+      ]
+    },
+    {
+      "date": "2026-10-12",
+      "kicker": "Tú eras el negocio",
+      "tipo": "valor",
+      "published": null,
+      "slides": [
+        {
+          "big": "Si tú eras el negocio, tu negocio <strong>no es herencia</strong>. Es un recuerdo."
+        },
+        {
+          "big": "El consultorio vale por el doctor. La cartera vale por el asesor. El despacho vale por el que firma.",
+          "sub": "El día que falta esa persona, el valor se va con ella."
+        },
+        {
+          "big": "Los que se quedan heredan el local, el equipo y la renta. No heredan a los clientes.",
+          "sub": "Y el equipo usado se vende en una fracción de lo que costó."
+        },
+        {
+          "big": "Por eso el autoempleado que la hizo bien suele estar <strong>más expuesto</strong> que el empleado que ganaba menos.",
+          "sub": "Ganó más, pero su patrimonio depende de que él siga ahí."
+        },
+        {
+          "big": "La prueba honesta: si tú no estuvieras el lunes, <strong>¿cuánto de lo que produces sigue entrando?</strong>"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-13",
+      "kicker": "El depa de la playa",
+      "tipo": "valor",
+      "published": null,
+      "slides": [
+        {
+          "big": "El depa que compraste para disfrutar puede volverse <strong>el problema más caro</strong> de tu sucesión."
+        },
+        {
+          "big": "Está en otro estado, a veces con otro régimen y otro notario. Eso suma tiempo y suma costo.",
+          "sub": "Y si es de tiempo compartido o fideicomiso, súmale reglas propias."
+        },
+        {
+          "big": "Mientras se resuelve, sigue generando mantenimiento, predial y cuotas.",
+          "sub": "Un bien que no produce pero sí cobra, todos los meses."
+        },
+        {
+          "big": "No es que esté mal tenerlo. Es que <strong>un bien de disfrute no es un bien líquido</strong>, y la familia va a necesitar líquido.",
+          "sub": "Disfrútalo. Solo no lo cuentes como el plan."
+        },
+        {
+          "big": "Haz la lista de lo tuyo en dos columnas: lo que se vuelve dinero en una semana, y lo que no."
+        }
+      ]
+    },
+    {
+      "date": "2026-10-14",
+      "kicker": "El precio de esperar",
+      "tipo": "venta",
+      "published": null,
+      "slides": [
+        {
+          "big": "Esto no se encarece por inflación. Se encarece <strong>por ti</strong>."
+        },
+        {
+          "big": "El precio se fija con dos cosas: la edad que tienes el día que entras, y tu salud ese día.",
+          "sub": "Las dos van en una sola dirección."
+        },
+        {
+          "big": "Un año más de espera sube el costo. Cinco lo suben de verdad.",
+          "sub": "Y el aumento se queda contigo todos los años que siga vigente."
+        },
+        {
+          "big": "Pero el riesgo caro no es el precio. Es el estudio médico que sale con algo.",
+          "sub": "Ahí ya no es cuánto cuesta: es si todavía te lo pueden dar."
+        },
+        {
+          "big": "Yo no persigo a nadie. Ayudo a los que <strong>me escriben por DM</strong> — por ejemplo, a ver cuánto cambia su número por esperarse un año."
+        }
+      ]
+    },
+    {
+      "date": "2026-10-15",
+      "kicker": "Ordenado",
+      "tipo": "valor",
+      "published": null,
+      "slides": [
+        {
+          "big": "Tener patrimonio y tenerlo ordenado son <strong>dos cosas distintas</strong>. Casi nadie tiene la segunda."
+        },
+        {
+          "big": "Ordenado quiere decir: alguien sabe qué tienes, dónde está, y qué hacer con ello.",
+          "sub": "Si la respuesta vive solo en tu cabeza, no está ordenado."
+        },
+        {
+          "big": "Muchas familias pierden bienes no por el juicio, sino porque <strong>nadie sabía que existían</strong>.",
+          "sub": "Una cuenta olvidada, un terreno, una inversión en una casa de bolsa que nadie más conocía."
+        },
+        {
+          "big": "El inventario es gratis y toma una tarde: cuentas, inmuebles, inversiones, seguros, deudas. Dónde está cada papel. A quién llamar.",
+          "sub": "Y que tu pareja sepa dónde está esa hoja."
+        },
+        {
+          "big": "El patrimonio que no está escrito en ningún lado <strong>no es patrimonio</strong>. Es suerte."
+        }
+      ]
+    },
+    {
+      "date": "2026-10-16",
+      "kicker": "Cuál es cuál",
+      "tipo": "valor",
+      "published": null,
+      "slides": [
+        {
+          "big": "Testamento, seguro y fideicomiso no compiten. Resuelven <strong>problemas distintos</strong>."
+        },
+        {
+          "big": "El <strong>testamento</strong> dice quién hereda qué. Evita el pleito por el reparto.",
+          "sub": "Lo que no hace: darles dinero mañana."
+        },
+        {
+          "big": "El <strong>seguro de herencia</strong> pone una cantidad en manos de a quien tú nombres, sin pasar por el juicio.",
+          "sub": "Lo que no hace: decidir el reparto de tus bienes."
+        },
+        {
+          "big": "El <strong>fideicomiso</strong> pone reglas: quién recibe, cuándo y bajo qué condiciones. Sirve cuando hay menores o un negocio de por medio.",
+          "sub": "Lo que no hace: ser barato ni rápido de montar."
+        },
+        {
+          "big": "La mayoría de las familias normales necesitan los <strong>dos primeros</strong>. El tercero es para casos particulares.",
+          "sub": "Y casi nadie tiene ninguno."
+        }
+      ]
+    },
+    {
+      "date": "2026-10-17",
+      "kicker": "La colegiatura",
+      "tipo": "valor",
+      "published": null,
+      "slides": [
+        {
+          "big": "Hay un gasto que no espera al juicio sucesorio: <strong>la colegiatura de enero</strong>."
+        },
+        {
+          "big": "La escuela no suspende el cobro porque la familia esté en un proceso legal. La renta tampoco. El súper tampoco.",
+          "sub": "Los gastos siguen en tiempo real mientras el patrimonio está detenido."
+        },
+        {
+          "big": "Por eso el primer recorte de una familia que pierde a quien sostenía casi siempre es <strong>la escuela de los hijos</strong>.",
+          "sub": "No por falta de patrimonio. Por falta de disponible en ese momento."
+        },
+        {
+          "big": "Haz la cuenta fría: si tu ingreso se detiene el lunes, <strong>¿cuántos meses aguanta tu casa</strong> con lo que hay disponible hoy?",
+          "sub": "No con lo que vale todo. Con lo que se puede usar esta semana."
+        },
+        {
+          "big": "Ese número —los meses que aguantan— es el más importante de tu vida financiera. Y casi nadie lo ha sacado."
+        }
+      ]
+    },
+    {
+      "date": "2026-10-18",
+      "kicker": "Los beneficiarios",
+      "tipo": "valor",
+      "published": null,
+      "slides": [
+        {
+          "big": "Hay un papel que manda <strong>más que tu testamento</strong>. Y probablemente lo llenaste sin pensar."
+        },
+        {
+          "big": "Es la designación de beneficiarios: la de tu seguro, la de tu Afore, la de tus cuentas.",
+          "sub": "Ese dinero va a quien dice ese papel, sin pasar por la sucesión."
+        },
+        {
+          "big": "Por eso mismo hay que revisarlo. Mucha gente lo llenó hace quince años y nunca lo volvió a ver.",
+          "sub": "Antes de casarse. Antes de los hijos. A veces con una pareja anterior."
+        },
+        {
+          "big": "Y otro detalle que rompe familias: dejar el <strong>100% a una sola persona</strong> \"para que ella reparta\".",
+          "sub": "Legalmente ese dinero es suyo. Lo que reparta después es un favor, no una obligación."
+        },
+        {
+          "big": "Revísalos este mes. Porcentajes claros, nombres completos, un sustituto por si acaso."
+        }
+      ]
+    },
+    {
+      "date": "2026-10-19",
+      "kicker": "En una tarde",
+      "tipo": "venta",
+      "published": null,
+      "slides": [
+        {
+          "big": "No necesitas resolver todo. Hay un <strong>plan mínimo</strong> que cabe en una tarde."
+        },
+        {
+          "big": "Uno: el inventario. Qué tienes, dónde está, a quién llamar. Una hoja, y que tu pareja sepa dónde vive.",
+          "sub": "Gratis."
+        },
+        {
+          "big": "Dos: beneficiarios al día. Cuentas, seguro, Afore. Porcentajes claros y nombres completos.",
+          "sub": "Gratis."
+        },
+        {
+          "big": "Tres: testamento. Cuesta menos de lo que la gente cree, y en septiembre varios estados lo bajan aún más.",
+          "sub": "Una visita al notario."
+        },
+        {
+          "big": "Cuatro: el dinero que entra <strong>la semana uno</strong>, mientras todo lo demás está detenido.",
+          "sub": "Esa es la única pieza que no se resuelve con papeles. Se resuelve antes."
+        },
+        {
+          "big": "Yo no persigo a nadie. Ayudo a los que <strong>me escriben por DM</strong> — aunque sea nada más para armar esa hoja."
+        }
+      ]
+    },
+    {
       "date": "2026-07-17",
       "kicker": "El encuadre",
       "slides": [
@@ -20,7 +416,8 @@
         }
       ],
       "published": "2026-07-17T21:43:50.104Z",
-      "ig_media_id": "18219293527327528"
+      "ig_media_id": "18219293527327528",
+      "tipo": "valor"
     },
     {
       "date": "2026-07-18",
@@ -50,7 +447,8 @@
       },
       "caption": "En México no necesitas ganar millones para ser rico. Probablemente ya lo eres sin darte cuenta.\n\nDesliza y checa en qué percentil caes →\n\nGuárdalo y compártelo con alguien que no valora lo bien que la hace.\n\nSíguenos para más sobre riqueza, patrimonio y herencia.\n\n#riqueza #patrimonio #finanzas #mexico #dinero #herencia #sueldos",
       "published": "2026-07-18T16:15:20.561Z",
-      "ig_media_id": "18117425317884654"
+      "ig_media_id": "18117425317884654",
+      "tipo": "valor"
     },
     {
       "date": "2026-07-21",
@@ -71,7 +469,10 @@
         {
           "big": "No para hacerlos ricos. Para que no tengan que desarmar lo que construiste para pagar lo que cuesta morir."
         }
-      ]
+      ],
+      "tipo": "venta",
+      "published": "2026-09-23T20:41:11.000Z",
+      "ig_media_id": "17894515371418933"
     },
     {
       "date": "2026-07-22",
@@ -105,7 +506,10 @@
         "line": "Guárdalo y compártelo.",
         "foot": "@herencia.inteligente"
       },
-      "caption": "Hay una mentira que todos los ricos repiten: que no trabajaron para lograrlo.\n\nDesliza →\n\nLa verdad es menos glamorosa y más digna: se partieron el lomo por años. Si tú ya la hiciste, fue igual. No lo ocultes.\n\nGuárdalo y compártelo con alguien que sí le sabe al trabajo.\n\nSíguenos para más sobre riqueza, patrimonio y herencia.\n\n#riqueza #mentalidad #trabajo #exito #mexico #patrimonio #herencia"
+      "caption": "Hay una mentira que todos los ricos repiten: que no trabajaron para lograrlo.\n\nDesliza →\n\nLa verdad es menos glamorosa y más digna: se partieron el lomo por años. Si tú ya la hiciste, fue igual. No lo ocultes.\n\nGuárdalo y compártelo con alguien que sí le sabe al trabajo.\n\nSíguenos para más sobre riqueza, patrimonio y herencia.\n\n#riqueza #mentalidad #trabajo #exito #mexico #patrimonio #herencia",
+      "published": "2026-08-31T16:21:16.000Z",
+      "ig_media_id": "17895771957598427",
+      "tipo": "valor"
     },
     {
       "date": "2026-07-23",
@@ -135,7 +539,8 @@
         "big": "El algoritmo te <strong>regaló</strong> hoy este post. Si no nos sigues, <strong>no nos volverás a ver</strong>.",
         "line": "Guárdalo y compártelo.",
         "foot": "@herencia.inteligente"
-      }
+      },
+      "tipo": "valor"
     },
     {
       "date": "2026-07-24",
@@ -158,7 +563,8 @@
         }
       ],
       "published": "2026-07-28T22:50:51.475Z",
-      "ig_media_id": "18339688906266633"
+      "ig_media_id": "18339688906266633",
+      "tipo": "venta"
     },
     {
       "date": "2026-07-25",
@@ -191,7 +597,8 @@
       },
       "caption": "Hay un número que, el día que lo alcanzas, tu dinero ya nunca se acaba.\n\nDesliza y calcula el tuyo →\n\nLa regla: cuando puedas vivir un año con el 5% de tus ahorros, eres libre. (Tus gastos anuales ÷ 0.05 = tu número.)\n\n¿Cuál es el tuyo? Escríbelo en los comentarios 👇\n\nGuárdalo para no perder la fórmula, y compártelo con alguien que necesita ver su número.\n\n#libertadfinanciera #patrimonio #finanzaspersonales #inversion #mexico #independenciafinanciera",
       "published": "2026-07-28T01:44:18.287Z",
-      "ig_media_id": "18089824571544277"
+      "ig_media_id": "18089824571544277",
+      "tipo": "valor"
     },
     {
       "date": "2026-07-26",
@@ -214,7 +621,8 @@
         }
       ],
       "published": "2026-07-31T14:45:29.549Z",
-      "ig_media_id": "18101990002916615"
+      "ig_media_id": "18101990002916615",
+      "tipo": "venta"
     },
     {
       "date": "2026-07-27",
@@ -234,7 +642,8 @@
         }
       ],
       "published": "2026-08-03T12:38:49.109Z",
-      "ig_media_id": "18129375115640374"
+      "ig_media_id": "18129375115640374",
+      "tipo": "valor"
     },
     {
       "date": "2026-07-28",
@@ -254,7 +663,8 @@
         }
       ],
       "published": "2026-08-05T13:38:45.513Z",
-      "ig_media_id": "18023620688890105"
+      "ig_media_id": "18023620688890105",
+      "tipo": "venta"
     },
     {
       "date": "2026-07-29",
@@ -290,7 +700,8 @@
       },
       "caption": "«El dinero llama dinero» no es un dicho: es la regla más real de las finanzas.\n\nDesliza →\n\nPero tiene una trampa: solo funciona cuando tienes. Si vives al día —sin importar cuánto ganes— nunca la vas a usar.\n\n¿Ya lo viviste en carne propia? Cuéntame en los comentarios 👇\n\nGuárdalo y compártelo con alguien que vive al día ganando bien.\n\n#finanzaspersonales #ahorro #dinero #patrimonio #mexico #riqueza #mentalidad",
       "published": "2026-07-30T20:22:08.521Z",
-      "ig_media_id": "18171451540446903"
+      "ig_media_id": "18171451540446903",
+      "tipo": "valor"
     },
     {
       "date": "2026-07-30",
@@ -320,7 +731,8 @@
       ],
       "caption": "En abril, el Senado puso sobre la mesa gravar las herencias en México. La Presidencia la rechazó… por ahora.\n\nDesliza →\n\nLa lección no es pánico: es estructura. Lo que está dentro de la masa hereditaria queda expuesto a lo que el Congreso decida mañana.\n\nGuárdalo y compártelo con alguien que debería enterarse.\n\nSi algo te resuena, escríbeme por DM y empecemos la conversación.\n\n#herencia #impuestos #patrimonio #sucesion #mexico #planeacionpatrimonial #seguros",
       "published": "2026-08-04T21:30:16.816Z",
-      "ig_media_id": "18109266410469840"
+      "ig_media_id": "18109266410469840",
+      "tipo": "valor"
     },
     {
       "date": "2026-07-31",
@@ -353,7 +765,8 @@
       },
       "caption": "«Les dejo 8 millones y viven con $80,000 al mes.» Ese plan tiene un error del doble.\n\nDesliza →\n\nCetes hoy paga alrededor del 6%, no el 12% que asume tu plan. Y si sacan los 80 de todos modos, el dinero se acaba en unos 12 años.\n\nGuárdalo y compártelo con alguien que trae un 12% imaginario en la cabeza.\n\nEl algoritmo te regaló hoy este post. Si no nos sigues, no nos volverás a ver.\n\n#herencia #patrimonio #cetes #finanzaspersonales #mexico #inversion #rendimiento",
       "published": "2026-08-06T22:47:59.200Z",
-      "ig_media_id": "17959495373984545"
+      "ig_media_id": "17959495373984545",
+      "tipo": "valor"
     },
     {
       "date": "2026-08-01",
@@ -386,7 +799,8 @@
       },
       "caption": "Aunque le atines al rendimiento, hay un ladrón trabajando 24/7 contra tu herencia: la inflación.\n\nDesliza →\n\nLos $80,000 de hoy comprarán la mitad en unos 15 años. Por eso un plan serio le regresa la inflación al capital — y por eso dejar $80,000 al mes de por vida cuesta cerca de 19 millones, no 8.\n\nGuárdalo y compártelo con alguien que cree que ya la armó.\n\nEl algoritmo te regaló hoy este post. Si no nos sigues, no nos volverás a ver.\n\n#herencia #inflacion #patrimonio #finanzaspersonales #mexico #planeacionpatrimonial",
       "published": "2026-08-07T19:09:54.732Z",
-      "ig_media_id": "18027610559846490"
+      "ig_media_id": "18027610559846490",
+      "tipo": "valor"
     },
     {
       "date": "2026-08-02",
@@ -420,7 +834,10 @@
         "line": "Guárdalo y compártelo.",
         "foot": "@herencia.inteligente"
       },
-      "caption": "Esta es la clave para que el banco no le congele tu dinero a tu familia el día que faltes.\n\nDesliza →\n\nEl tip de hoy toma 15 minutos y vale oro: llama a tu banco y pregunta quiénes son tus beneficiarios. Y de paso revisa tu afore y tus inversiones.\n\nGuárdalo para hacerlo hoy, y compártelo con alguien que seguro no tiene ni idea de quién puso.\n\nEl algoritmo te regaló hoy este post. Si no nos sigues, no nos volverás a ver.\n\n#herencia #beneficiarios #patrimonio #finanzaspersonales #mexico #bancos #afore"
+      "caption": "Esta es la clave para que el banco no le congele tu dinero a tu familia el día que faltes.\n\nDesliza →\n\nEl tip de hoy toma 15 minutos y vale oro: llama a tu banco y pregunta quiénes son tus beneficiarios. Y de paso revisa tu afore y tus inversiones.\n\nGuárdalo para hacerlo hoy, y compártelo con alguien que seguro no tiene ni idea de quién puso.\n\nEl algoritmo te regaló hoy este post. Si no nos sigues, no nos volverás a ver.\n\n#herencia #beneficiarios #patrimonio #finanzaspersonales #mexico #bancos #afore",
+      "published": "2026-08-10T14:52:42.788Z",
+      "ig_media_id": "17942246682067563",
+      "tipo": "valor"
     }
   ]
 }
